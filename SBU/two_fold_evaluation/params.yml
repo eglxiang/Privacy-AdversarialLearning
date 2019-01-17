@@ -1,0 +1,23 @@
+TRAIN:
+  BATCH_SIZE: 16
+  MOVING_AVERAGE_DECAY: 0.9999
+  WEIGHT_DECAY: 0.002
+  NUM_EXAMPLES_PER_EPOCH: 500
+  PRINT_STEP: 20
+  VAL_STEP: 100
+DATA:
+  TRAIN_FILES_DIR: '../data/joint_adv/RGB/noisy/train'
+  VAL_FILES_DIR: '../data/joint_adv/RGB/clean/val'
+  TEST_FILES_DIR: '../data/joint_adv/RGB/clean/test'
+  LOG_DIR: 'tensorboard_events'
+  NUM_CLASSES: 13
+  NCHANNEL: 3
+  DEPTH: 16
+  WIDTH: 160
+  HEIGHT: 120
+  CROP_HEIGHT: 112
+  CROP_WIDTH: 112
+  USE_CROP: True
+  USE_RANDOM_CROP: False
+  USE_CENTER_CROP: True
+  NUM_THREADS: 10
